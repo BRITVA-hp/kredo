@@ -1,0 +1,38 @@
+//Montserrat
+
+@font-face {
+    font-family: 'ProximaNova';
+    src:
+    url('../fonts/ProximaNova/ProximaNova-Bold.woff') format('woff'),
+    url('../fonts/ProximaNova/ProximaNova-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ProximaNova';
+    src:
+    url('../fonts/ProximaNova/ProximaNova-Light.woff') format('woff'),
+    url('../fonts/ProximaNova/ProximaNova-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ProximaNova';
+    src:
+    url('../fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+    url('../fonts/ProximaNova/ProximaNova-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ProximaNova';
+    src:
+    url('../fonts/ProximaNova/ProximaNova-Semibold.woff') format('woff'),
+    url('../fonts/ProximaNova/ProximaNova-Semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}

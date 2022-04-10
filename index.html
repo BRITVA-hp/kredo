@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=6b448d53-6158-49b3-aed6-01ced7b9c199&lang=ru_RU" type="text/javascript"></script>
+    <title>ООО «КРЕДО»</title>
+</head>
+<body>
+
+    <header class="header section">
+
+        <div class="header-top">
+            <div class="header-top__container container">
+                <div class="row header-top__row">
+                    <span class="header-top__box"><img src="img/header/here.png" class="header-top__logo--here" alt="here">Мы находимся по адресу: <a href="#">г. Новокуйбышевск, ул. Дзержинского, д.13</a></span>
+                    <div class="row header-top__box">
+                        <img src="img/header/msg.png" alt="here">
+                        <span>Ваши вопросы: <a href="mailto:kredosam@yandex.ru">kredosam@yandex.ru</a></span>
+                    </div>
+                </div>
+
+                <div class="header__burger">
+                    <div class="header__burger__line"></div>
+                    <div class="header__burger__line"></div>
+                    <div class="header__burger__line"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="header-menu">
+            <ul class="header-menu__ul">
+                <li class="header-menu__li"><a href="info.html">О компании</a></li>
+                <li class="header-menu__li"><a href="expert.html">Экспертизы</a></li>
+                <li class="header-menu__li"><a href="legal.html">Юридические услуги</a></li>
+                <li class="header-menu__li"><a href="cadastre.html">Кадастровые работы</a></li>
+                <li class="header-menu__li"><a href="geodesic.html">Геодезические работы</a></li>
+                <li class="header-menu__li"><a href="grade.html">Оценка</a></li>
+                <li class="header-menu__li"><a href="price.html">Прайс-лист</a></li>
+                <li class="header-menu__li"><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-center">
+            <div class="header-center__container container">
+                <div class="row header-center__row">
+                    <a href="index.html" class="header__logo">
+                        <picture>
+                            <source srcset="img/header/logoM.png" media="(max-width: 991px)">
+                            <img src="img/header/logo.png" alt="kredo">
+                            <!-- <img src="img/header/logoM.png" alt="kredo"> -->
+                        </picture>
+                    </a>
+    
+                    <div class="header-center__tel">
+                        <a href="tel:+7 (84635) 9-92-25" class="header-center__tel__link"><img src="img/header/phone.png" alt="tel">+7 (84635) 9-92-25</a>
+                        <p class="header-center__tel__text">с 8.00 до 17.00 (Пн-Чт) с 8.00 до 16.00 (ПТ)</p>
+                        <p class="header-center__tel__text header-center__tel__text--bottom">(12.00 - 13.00 перерыв)</p>
+                    </div>
+    
+                    <div class="header-center__button-group">
+                        <a href="tel:+7 (84635) 9-92-25" class="header-center__tel__link header-center__tel__link--mobile"><img src="img/header/phoneM1.png" alt="tel"></a>
+                        <button data-modalMain class="button header__button">
+                            <span>Заказать обратный звонок</span>
+                            <span>Обратный звонок</span>
+                        </button>
+                        <a href="contacts.html" class="header-center__button-group__link">>> Карта проезда к нашей компании</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="header-nav">
+            <ul class="header__ul">
+                <li class="header__li"><a href="info.html">О компании</a></li>
+                <li class="header__li"><a href="expert.html">Экспертизы</a></li>
+                <li class="header__li"><a href="legal.html">Юридические услуги</a></li>
+                <li class="header__li"><a href="cadastre.html">Кадастровые работы</a></li>
+                <li class="header__li"><a href="geodesic.html">Геодезические работы</a></li>
+                <li class="header__li"><a href="grade.html">Оценка</a></li>
+                <li class="header__li"><a href="price.html">Прайс-лист</a></li>
+                <li class="header__li"><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- /.header -->
+
+    <main>
+
+        <section class="section main">
+
+            <div class="main__card main__card--active">
+                <div class="main__card__container container">
+                    <div class="main__card__box">
+                        <h3 class="main__title">Землеустроительные экспертизы</h3>
+                        <p class="main__text">Проведение судебных и досудебных экспертиз. <br> Уточнение границ и плана земельного участка.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.main__card -->
+
+            <div class="main__card">
+                <div class="main__card__container container">
+                    <div class="main__card__box">
+                        <h3 class="main__title">Юридические услуги <br> Оформление недвижимости под ключ</h3>
+                        <p class="main__text">Оформление недвижимости. И земельных участков для граждан. Помощь в регистрации прав.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.main__card -->
+
+            <div class="main__card">
+                <div class="main__card__container container">
+                    <div class="main__card__box">
+                        <h3 class="main__title">Проведение кадастровых работ</h3>
+                        <p class="main__text">Межевание (раздел, объединение) земельных участков, <br> Подготовка межевых планов</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.main__card -->
+
+            <div class="main__card">
+                <div class="main__card__container container">
+                    <div class="main__card__box">
+                        <h3 class="main__title">Вынос границ в натуру</h3>
+                        <p class="main__text">Комплекс действий по установлению непосредственно на местности границ земельных участков, занесенных в государственный кадастр недвижимости (ГКН)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.main__card -->
+
+            <div class="main__card">
+                <div class="main__card__container container">
+                    <div class="main__card__box">
+                        <h3 class="main__title">Изготовление технических планов зданий, сооружений</h3>
+                        <p class="main__text">Документ, в котором отражены характеристики объекта недвижимости, которые внесены в государственный кадастр недвижимости (ГКОН), и указаны сведения о доме, квартире или объекте</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.main__card -->
+
+            <div class="main__card">
+                <div class="main__card__container container">
+                    <div class="main__card__box">
+                        <h3 class="main__title">Оценка недвижимости, имущества</h3>
+                        <p class="main__text">Оценка недвижимости, транспорта, средств, движимого имущества <br> Подготовка отчета от 3 рабочих дней</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__arrow main__arrow--prev">
+                <svg width="25" height="49" viewBox="0 0 25 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24.5 48.5L0.5 24.5L24.5 0.5" stroke="#F7F7F7"/>
+                </svg>
+            </div>
+                
+
+            <div class="main__arrow main__arrow--next">
+                <svg width="26" height="49" viewBox="0 0 26 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.5 0.5L24.5 24.5L0.5 48.5" stroke="#F7F7F7"/>
+                </svg>
+            </div>                    
+        </section>
+        <!-- /.section main -->
+
+        <section class="section Iinfo">
+            <div class="container Iinfo__container">
+                <div class="row Iinfo__row">
+
+                    <div class="Iinfo__card">
+                        <div class="Iinfo__card__box">
+                            <p class="Iinfo__card__title">Землеустроительные <br> экспертизы</p>
+                            <p class="Iinfo__card__text">Проведение судебных и досудебных экспертиз. <br> Уточнение границ и плана земельного участка. <br> В том числе судебные экспертизы.</p>
+                        </div>
+                        <button data-modalMain class="button Iinfo__button">Задать вопрос</button>
+                    </div>
+                    
+                    <div class="Iinfo__card Iinfo__card--2">
+                        <div class="Iinfo__card__box">
+                            <p class="Iinfo__card__title">Юридические услуги, земельные споры, регистрация недвижимости</p>
+                            <p class="Iinfo__card__text">Оформление прав на недвижимость –ответственный шаг, который сопровождается процедурой регистрации всех документов.</p>
+                        </div>
+                        <button data-modalMain class="button Iinfo__button Iinfo__button--2">Заказать услуги</button>
+                    </div>
+
+                    <div class="Iinfo__card Iinfo__card--3">
+                        <div class="Iinfo__card__box">
+                            <p class="Iinfo__card__title">Кадастровые и <br> геодезические работы</p>
+                            <p class="Iinfo__card__text">Межевание, раздел, объединение зем. участков для ИЖС, садов, гаражей, ЛПХ <br> Подготовка технических планов</p>
+                        </div>
+                        <button data-modalMain class="button Iinfo__button Iinfo__button--3">Заказать оценку</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- /.section Iinfo -->
+
+        <section class="section Iworks">
+
+            <div class="container Iworks__container">
+
+                <div class="Iworks__box">
+                    <h1 class="Iworks__title">Кадастровые, геодезические и межевые работы</h1>
+                    <h1 class="Iworks__subtitle">Почему выбирают именно нас?</h1>
+                    <p class="Iworks__text"><span>Компания ООО "Кредо"</span> - была создана в сентябре 2007 года и зарегистрирована на территории городского округа Новокуйбышевск Самарской области. Форма собственности – общество с ограниченной ответственностью.</p>
+                    <p class="Iworks__text">С первого дня своего создания мы ориентируемся на оказание услуг в сфере инженерно-геодезических изысканий и кадастровых работ (лицензии № СРГ-01965К (картографическая деятельность), № СРГ-01965Г (геодезическая деятельность), свидетельств СРО №СРО-И-008-30112009-0008.1).</p>
+                    <p class="Iworks__text">Мы накопили большой опыт по оценке нестандартных и сложных проектов, что помогает гарантировать нашим заказчикам своевременное и качественное выполнение работ. Широкий спектр услуг компании по оценке подкрепляется гибкой ценовой политикой.</p>
+                </div>
+
+                <div class="Iworks__window">
+                    <div class="Iworks__field row">
+
+                        <div class="Iworks__card">
+                            <img src="img/index/works/img1.png" alt="logo" class="Iworks__card__img">
+                            <p class="Iworks__card__title">Точное соблюдение сроков</p>
+                            <p class="Iworks__card__text">Мы называем точные сроки и прописываем их в договоре. Основываясь на многолетнем опыте, мы помогаем решать сложные вопросы в кадастре и геодезии быстро и качественно!</p>
+                        </div>
+
+                        <div class="Iworks__card">
+                            <img src="img/index/works/img2.png" alt="logo" class="Iworks__card__img">
+                            <p class="Iworks__card__title">Точное соблюдение сроков</p>
+                            <p class="Iworks__card__text">Мы называем точные сроки и прописываем их в договоре. Основываясь на многолетнем опыте, мы помогаем решать сложные вопросы в кадастре и геодезии быстро и качественно!</p>
+                        </div>
+
+                        <div class="Iworks__card">
+                            <img src="img/index/works/img3.png" alt="logo" class="Iworks__card__img">
+                            <p class="Iworks__card__title">Гарантия выполнения работ - договор</p>
+                            <p class="Iworks__card__text">Перед выполнением работы мы оказываем консультацию по услугам кадастровых работ и заключаем договор, где обозначен ход и масштаб работы.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- /.section Iworks -->
+
+        <section class="Iexpert section">
+
+            <div class="container Iexpert__container">
+                <h3 class="section__title Iexpert__title">ПРОВЕДЕНИЕ <span>НЕЗАВИСИМЫХ ЭКСПЕРТИЗ</span> <br> В СУДЕБНОМ И ДОСУДЕБНОМ ПОРЯДКЕ <br> ЮРИДИЧЕСКИЕ УСЛУГИ</h3>
+
+                <div class="Iexpert__window">
+                    <div class="Iexpert__field row">
+
+                        <div class="Iexpert__card">
+                            <a class="Iexpert__card__link" href="expert.html">Землеустроительные<br>экспертизы</a>
+    
+                            <p data-modalMain class="Iexpert__card__button">Подробнее >></p>
+                        </div>
+
+                        <div class="Iexpert__card Iexpert__card--2">
+                            <a class="Iexpert__card__link" href="legal.html">Юридические услуги<br>(в т.ч. представление в суде)</a>
+    
+                            <p data-modalMain class="Iexpert__card__button">Подробнее >></p>
+                        </div>
+
+                        <div class="Iexpert__card Iexpert__card--3">
+                            <a class="Iexpert__card__link" href="legal.html">Земельные споры<br>по границе участков</a>
+    
+                            <p data-modalMain class="Iexpert__card__button">Подробнее >></p>
+                        </div>
+
+                    </div>
+                </div>
+    
+                <button data-modalMain class="button Iexpert__button">Задать вопрос эксперту-юристу</button>
+            </div>
+
+        </section>
+        <!-- /.Iexpert section -->
+
+        <section class="section Iprices">
+
+            <div class="container Iprices__container">
+                <h3 class="section__title Iprices__title">СРАВНИТЕ <span>ЦЕНЫ НА КАДАСТРОВЫЕ УСЛУГИ,</span> <br> CДЕЛАЙТЕ <span>ПРАВИЛЬНЫЙ ВЫБОР</span></h3>
+
+                <div class="Iprices__box">
+
+                    <div class="Iprices__card">
+                        <p class="Iprices__card__text">Межевание земельного участка</p>
+                        <p data-modalMain class="Iprices__card__button">Подробнее >></p>
+                    </div>
+
+                    <div class="Iprices__card Iprices__card--2">
+                        <p class="Iprices__card__text">Раздел земельного <br> участка</p>
+                        <p data-modalMain class="Iprices__card__button">Подробнее >></p>
+                    </div>
+
+                    <div class="Iprices__card Iprices__card--3">
+                        <p class="Iprices__card__text">Объединение земельных участков</p>
+                        <p data-modalMain class="Iprices__card__button">Подробнее >></p>
+                    </div>
+
+                    <div class="Iprices__card Iprices__card--4">
+                        <p class="Iprices__card__text">Перераспределение земельных участков</p>
+                        <p data-modalMain class="Iprices__card__button">Подробнее >></p>
+                    </div>
+
+                    <div class="Iprices__card Iprices__card--5">
+                        <p class="Iprices__card__text">Подготовка технических планов зданий, сооружений</p>
+                        <p data-modalMain class="Iprices__card__button">Подробнее >></p>
+                    </div>
+
+                    <div class="Iprices__card Iprices__card--6">
+                        <p class="Iprices__card__text">Акт обследования, кадастровое заключение</p>
+                        <p data-modalMain class="Iprices__card__button">Подробнее >></p>
+                    </div>
+
+                    <div class="Iprices__card Iprices__card--7">
+                        <p class="Iprices__card__text">Вынос в натуру границ земельного участка</p>
+                    </div>
+
+                    <div class="Iprices__card Iprices__card--8">
+                        <p class="Iprices__card__text">Оценка недвижимости, регистрация, сопровождение сделок</p>
+                    </div>
+
+                    <div class="Iprices__card Iprices__card--9">
+                        <p class="Iprices__card__text">Прайс-лист и подробные цены на работы</p>
+                    </div>
+
+                </div>
+
+                <button data-modalMain class="button Iprices__button">Задать вопрос кадастровому инженеру</button>
+            </div>
+
+        </section>
+        <!-- /.section Iprices -->
+
+        <section class="section Igeo">
+
+            <div class="Igeo__img"></div>
+
+            <div class="Igeo__box">
+                <h3 class="Igeo__title">ООО «КРЕДО» - Межевание и кадастровые работы, геодезия</h3>
+
+                <p class="Igeo__text"><span>ООО «КРЕДО»</span> имеет лицензии на осуществление геодезической и картографической деятельности, высокоточное геодезическое и спутниковое оборудование, необходимое для выполнения инженерно-геодезических изысканий, составления топографических планов местности, сопровождения строительства и иных целей. Основу коллектива компании составляют высококвалифицированные специалисты, имеющие профильное образование и большой опыт работы.</p>
+                <button data-modalMain class="button Igeo__button">Задать свой вопрос инженеру</button>
+            </div>
+
+        </section>
+        <!-- /.section Igeo -->
+
+        <section class="section Iprocess">
+
+            <div class="container Iprocess__container">
+                <h3 class="Iprocess__title">Как происходит процесс кадастровых работ?</h3>
+                <p class="Iprocess__text">Подготовка и сбор информации также важны при выполнении кадастровых работ, направленных на формирование новых наделов, полного переноса пограничной разметки с плана проекта на реальный участок земли. Помимо этого, мы предоставляем своим клиентам услугу полного сбора требуемых документов при смене владельца земельного участка, а также недвижимости, находящейся на территории данного надела.</p>
+
+                <div class="Iprocess__window">
+                    <div class="row Iprocess__field">
+
+                        <div class="Iprocess__card">
+                            <img class="Iprocess__card__img" src="img/index/process/img1.png" alt="img">
+                            <p class="Iprocess__card__title">ЗВОНОК ИЛИ ЗАЯВКА</p>
+                            <p class="Iprocess__card__text">Получение заявки: сайт, звонок, письмо</p>
+                        </div>
+
+                        <div class="Iprocess__card">
+                            <img class="Iprocess__card__img" src="img/index/process/img2.png" alt="img">
+                            <p class="Iprocess__card__title">УТОЧНЕНИЕ ДЕТАЛЕЙ</p>
+                            <p class="Iprocess__card__text">Проводим первичную консультацию, выясняем потребности клиента</p>
+                        </div>
+
+                        <div class="Iprocess__card">
+                            <img class="Iprocess__card__img" src="img/index/process/img3.png" alt="img">
+                            <p class="Iprocess__card__title">ВСТРЕЧА, ЗАКЛЮЧЕНИЕ ДОГОВОРА</p>
+                            <p class="Iprocess__card__text">Подписание договора, определение сроков работ</p>
+                        </div>
+
+                        <div class="Iprocess__card">
+                            <img class="Iprocess__card__img" src="img/index/process/img4.png" alt="img">
+                            <p class="Iprocess__card__title">ВЫЕЗД КАДАСТРОВОГО ИНЖЕНЕРА</p>
+                            <p class="Iprocess__card__text">На объекте производятся обмеры</p>
+                        </div>
+
+                        <div class="Iprocess__card">
+                            <img class="Iprocess__card__img" src="img/index/process/img5.png" alt="img">
+                            <p class="Iprocess__card__title">КАМЕРАЛЬНЫЕ РАБОТЫ</p>
+                            <p class="Iprocess__card__text">Обработка и составление необходимого документа</p>
+                        </div>
+
+                        <div class="Iprocess__card">
+                            <img class="Iprocess__card__img" src="img/index/process/img6.png" alt="img">
+                            <p class="Iprocess__card__title">ПЕРЕДАЧА ЗАКАЗАННОГО ДОКУМЕНТА</p>
+                            <p class="Iprocess__card__text">Отчет о полученном результате</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- /.section Iprocess -->
+
+        <section class="section Iadv">
+
+            <div class="container Iadv__container">
+                <h3 class="Iadv__title">Наши преимущества в цифрах</h3>
+                <div class="Iadv__box">
+
+                    <div class="Iadv__card">
+                        <p class="Iadv__card__title Iadv__card__title--1">><span>0</span></p>
+                        <p class="Iadv__card__text">Довольных и счастливых клиентов за время работы компании</p>
+                    </div>
+
+                    <div class="Iadv__card">
+                        <p class="Iadv__card__title Iadv__card__title--2">><span>0</span></p>
+                        <p class="Iadv__card__text">Изготовленных и зарегистрированных технических планов</p>
+                    </div>
+
+                    <div class="Iadv__card">
+                        <p class="Iadv__card__title Iadv__card__title--3"><span>0</span></p>
+                        <p class="Iadv__card__text">Проведенных кадастровых и геодезических работ</p>
+                    </div>
+
+                    <div class="Iadv__card">
+                        <p class="Iadv__card__title Iadv__card__title--4"><span>0</span> лет</p>
+                        <p class="Iadv__card__text">Успешной работы на территории Самарской области</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- /.section Iadv -->
+
+        <section class="section Icontacts">
+
+            <h3 class="Icontacts__title">Контактная информация</h3>
+
+            <div class="Icontacts__box">
+                <div class="Icontacts__wrap">
+
+                    <div class="Icontacts__text-block">
+                        <p class="Icontacts__header">Мы находимся по адресу:</p>
+                        <p class="Icontacts__text">Самарская область, г. Новокуйбышевск, ул. Дзержинского, д.13</p>
+                    </div>
+
+                    <div class="Icontacts__text-block">
+                        <p class="Icontacts__header">Режим работы:</p>
+                        <p class="Icontacts__text">с 8.00 до 17.00 ПН-ЧТ (12.00 - 13.00 обед) <br> с 8.00 до 16.00 ПТ</p>
+                    </div>
+
+                    <div class="Icontacts__text-block">
+                        <p class="Icontacts__header">Почта для ваших вопросов:</p>
+                        <a href="mailto:kredosam@yandex.ru" class="Icontacts__link">kredosam@yandex.ru</a>
+                    </div>
+
+                </div>
+
+                <div data-modalIcontacts class="Icontacts__img">
+                    <p class="Icontacts__img__text">Нажмите, что бы увеличить</p>
+                    <img src="img/index/contacts/img.png" alt="here">
+                </div>
+            </div>
+
+            <div class="Icontacts__map" id="map"></div>
+
+            <div class="modal-Icontacts modal">
+
+                <svg class="modal-Icontacts__close" width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.41421 -0.000151038L0 1.41406L21.2132 22.6273L22.6274 21.2131L1.41421 -0.000151038Z" fill="#000000"></path>
+                    <path d="M22.6291 1.41421L21.2148 0L0.00164068 21.2132L1.41585 22.6274L22.6291 1.41421Z" fill="#000000"></path>
+                </svg>
+
+                <div class="modal-Icontacts__dialog">
+                    <img src="img/index/contacts/img.png" alt="here">
+                </div>
+            </div>
+
+            <div class="section Icall">
+
+                <h3 class="Icall__title">Позвоните нам: <a href="tel:+7 (84635) 9-92-25">+7 (84635) 9-92-25</a></h3>
+                <h4 class="Icall__subtitle">И мы ответим на все вопросы!</h4>
+    
+                <div class="row Icall__row">
+                    <div class="Icall__card">
+                        <p data-modalMain class="Icall__card__text">Оставить заявку на проведение работ</p>
+                    </div>
+                    <div class="Icall__card Icall__card--2">
+                        <a href="price.html" class="Icall__card__text">Узнать актуальный прайс-лист цен на услуги</a>
+                    </div>
+                </div>
+    
+            </div>
+
+        </section>
+        <!-- /.section Icontacts -->
+
+    </main>
+
+    <footer class="footer section">
+
+        <div class="container footer__container">
+
+            <div class="row footwr__row footer__row--top">
+
+                <div class="footer__card">
+                    <p class="footer__title">МЕЖЕВАНИЕ ЗЕМЕЛЬНЫХ УЧАСТКОВ</p>
+
+                    <p class="footer__text">Раздел земельного участка</p>
+                    <p class="footer__text">Объединение зем. участка</p>
+                    <p class="footer__text">Перераспределние з/у</p>
+                    <p class="footer__text">Межевой план</p>
+                </div>
+
+                <div class="footer__card">
+                    <p class="footer__title">ПОДГОТОВКА ТЕХНИЧЕСКИХ ПЛАНОВ</p>
+
+                    <p class="footer__text">Технический план здания</p>
+                    <p class="footer__text">Технический план гаража</p>
+                    <p class="footer__text">Технический план сооружения</p>
+                    <p class="footer__text">Технический план нежилого объекта</p>
+                </div>
+
+                <div class="footer__card">
+                    <p class="footer__title">ГЕОДЕЗИЧЕСКИЕ, ТОПОГРАФИЧЕСКИЕ РАБОТЫ</p>
+
+                    <p class="footer__text">Топографическая съемка</p>
+                    <p class="footer__text">Геодезические изыскания</p>
+                    <p class="footer__text">Акт обследования</p>
+                    <p class="footer__text">Заключение кадастрового инженера</p>
+                </div>
+
+                <div class="footer__card">
+                    <p class="footer__title">УСЛУГИ ОЦЕНКИ НЕДВИЖИМОСТИ, ИМУЩЕСТВА, СОБСТВЕННОСТИ</p>
+
+                    <p class="footer__text">Оценка квартиры, дома</p>
+                    <p class="footer__text">Оценка земельного участка</p>
+
+                    <img class="footer__logo" src="img/footer/logo.png" alt="logo">
+                </div>
+
+            </div>
+
+            <div class="row footer__row footer__row--bottom">
+
+                <div class="footer__contacts footer__info">
+                    <p class="footer__contacts__title">КОНТАКТЫ</p>
+                    <p class="footer__contacts__text">
+                        <img src="img/footer/here.png" alt="here">
+                        <span>г. Новокуйбышевск, ул. Дзержинского, д.13</span>
+                    </p>
+                </div>
+
+                <div class="footer__tel footer__info">
+                    <div class="footer__tel__text">
+                        <div class="row">
+                            <img src="img/footer/tel.png" alt="tel">
+                            <a href="tel:+7 (84635) 9-92-25">+7 (84635) 9-92-25</a>
+                        </div>
+                        <span>с 9.00 до 18.00 - ПН-ПТ</span>
+                    </div>
+                </div>
+
+                <div class="footer__msg footer__info">
+                    <p class="footer__msg__text">
+                        <img src="img/footer/msg.png" alt="message">
+                        Ваши вопросы: <a href="mailto:kredosam@yandex.ru">kredosam@yandex.ru</a>
+                    </p>
+                </div>
+
+            </div>
+
+            <p class="footer__polit">© 2020, ООО "КРЕДО" - все права защищены. Полный комплекс услуг по межевым и кадастровым работам. Технические планы, подготовка схем земельных участков.</p>
+
+        </div>
+
+    </footer>
+    <!-- /.footer section -->
+
+    <div data-modalSecond class="msg-wrap">
+        <p class="msg__text">Быстро ответим на ваши вопросы</p>
+        <div class="msg msg--anim msg--click">
+            <svg class="t708__icon" style="fill:#ffffff;" width="28px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.6 17.5"> <path d="M3.7 17.5v-4.8H2c-1.1 0-2-.9-2-2V2C0 .9.9 0 2 0h14.6c1.1 0 2 .9 2 2v8.8c0 1.1-.9 2-2 2H9l-5.3 4.7zM2 1c-.6 0-1 .4-1 1v8.8c0 .5.4 1 1 1h2.8v3.5l3.8-3.5h8c.5 0 1-.4 1-1V2c0-.5-.4-1-1-1H2z"></path> </svg>
+        </div>
+    </div>
+
+    <div class="modal modal-main">
+
+        <img class="modal-main__close" src="img/modal/close.png" alt="close">
+
+        <form action="#" class="modal-main__dialog">
+            <h3 class="modal-main__title">У вас есть вопрос? Хотите заказать кадастровые работы?</h3>
+            <p class="modal-main__text">Просто отправьте ваши контакты и мы перезвоним</p>
+
+            <div class="modal-main__input-group">
+                <input class="modal-main__input" type="text" placeholder="Введите ваше имя">
+            </div>
+
+            <div class="modal-main__input-group">
+                <input class="modal-main__input" type="tel" placeholder="+7 (___) ___ - __ - __">
+            </div>
+
+            <div class="modal-main__input-group">
+                <textarea class="modal-main__textarea" cols="30" rows="4" type="text" placeholder="Задайте свой вопрос или оставьте комментарий..."></textarea>
+            </div>
+            <button class="button modal-main__button">Отправить сообщение</button>
+
+            <p class="modal-main__footer">Отправляя данные вы соглашаетесь с политикой обработки данных</p>
+
+        </form>
+
+    </div>
+    <!-- /.modal modal-main -->
+
+    <div class="modal-second">
+        <div class="modal-second__dialog">
+            <p class="modal-second__title">У вас есть вопросы или вы хотите заказать услугу?</p>
+
+            <div class="modal-second__input-group">
+                <input placeholder="Ваше имя" type="text" class="modal-second__input">
+            </div>
+
+            <div class="modal-second__input-group">
+                <input placeholder="+7 (___) ___ - __ - __" type="tel" class="modal-second__input">
+            </div>
+
+            <div class="modal-second__input-group">
+                <textarea placeholder="Введите ваш вопрос или пожелание" class="modal-second__textarea" id="" cols="30" rows="4"></textarea>
+            </div>
+
+            <button class="button modal-second__button">ОТПРАВИТЬ</button>
+
+            <p class="modal-second__text">ООО "Кредо" - топографио-геодезическая компания</p> 
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
