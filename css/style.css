@@ -362,6 +362,41 @@ body {
   .button:hover {
     background-color: #ff8562; }
 
+.wysiwyg {
+  font-size: 20px;
+  line-height: 1.55; }
+  .wysiwyg strong {
+    font-weight: 700; }
+  .wysiwyg i {
+    margin-bottom: 30px; }
+  .wysiwyg a {
+    text-decoration: none;
+    color: #000; }
+  .wysiwyg ul {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-weight: 300; }
+  .wysiwyg p {
+    margin-bottom: 30px;
+    font-weight: 300; }
+  .wysiwyg span {
+    font-weight: 700; }
+  .wysiwyg h4 {
+    margin: auto;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 60px;
+    letter-spacing: 2px; }
+  .wysiwyg h3 {
+    margin: auto;
+    text-align: center;
+    font-size: 64px;
+    line-height: 1.23;
+    font-weight: 600;
+    margin-bottom: 80px;
+    max-width: 960px; }
+
 .section {
   max-width: 1920px;
   margin: auto;
@@ -379,6 +414,8 @@ body {
 .container {
   max-width: 1420px;
   margin: auto; }
+  .container--small {
+    max-width: 1160px; }
 
 .row {
   display: flex;
@@ -1022,6 +1059,48 @@ body {
       color: #fff;
       cursor: pointer; }
 
+.path {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .path__ul {
+    justify-content: flex-start;
+    list-style-type: none; }
+  .path__li {
+    font-size: 16px;
+    transition: 0.3s;
+    margin-right: 30px;
+    position: relative; }
+    .path__li::after {
+      content: '/';
+      position: absolute;
+      bottom: 0;
+      right: -18px; }
+    .path__li:last-of-type {
+      margin-right: 0; }
+      .path__li:last-of-type::after {
+        display: none; }
+    .path__li:hover {
+      opacity: 0.7; }
+  .path__link {
+    text-decoration: none;
+    color: #000; }
+    .path__link--active {
+      color: #fa7e19; }
+
+.info {
+  margin-bottom: 60px; }
+  .info-cert__card {
+    width: 360px;
+    height: 360px;
+    background-position: center;
+    background-size: cover;
+    cursor: zoom-in; }
+  .info-cert__box {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fill, 360px);
+    justify-content: center; }
+
 .footer {
   background-color: #1e1f1e;
   color: #fff;
@@ -1113,6 +1192,20 @@ body {
   .modal--active {
     opacity: 1;
     visibility: visible; }
+  .modal-info {
+    background-color: #fff; }
+    .modal-info__img {
+      max-width: 100%;
+      max-height: calc( 100vh - 30px); }
+    .modal-info__close {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      cursor: pointer; }
+      .modal-info__close path {
+        transition: 0.3s; }
+      .modal-info__close:hover path {
+        fill: tomato; }
   .modal-second {
     z-index: 197;
     position: fixed;
@@ -1396,6 +1489,35 @@ body {
     font-size: 14px; } }
 
 @media screen and (max-width: 991px) {
+  .wysiwyg {
+    font-size: 16px; }
+    .wysiwyg i {
+      margin-bottom: 15px; }
+    .wysiwyg p {
+      margin-bottom: 15px; }
+    .wysiwyg h3 {
+      font-size: 42px;
+      margin-bottom: 30px; }
+    .wysiwyg h4 {
+      font-size: 14px;
+      margin-bottom: 20px; }
+  .info {
+    margin-bottom: 30px; }
+    .info-cert__box {
+      grid-template-columns: repeat(auto-fill, 300px);
+      grid-gap: 20px; }
+    .info-cert__card {
+      width: 300px;
+      height: 300px; }
+  .path {
+    padding: 20px 10px; }
+    .path__ul {
+      flex-wrap: wrap; }
+    .path__li {
+      font-size: 14px;
+      margin-right: 15px; }
+      .path__li::after {
+        display: none; }
   .modal-second {
     right: 20px;
     bottom: 70px; }
@@ -1653,6 +1775,12 @@ body {
         font-size: 12px; } }
 
 @media screen and (max-width: 767px) {
+  .modal-info__dialog {
+    overflow: auto; }
+  .modal-info__img {
+    max-width: none;
+    max-height: none;
+    width: auto; }
   .footer__row--bottom {
     flex-direction: column;
     align-items: center; }
@@ -1673,6 +1801,11 @@ body {
       margin-bottom: 20px; } }
 
 @media screen and (max-width: 575px) {
+  .wysiwyg h3 {
+    font-size: 28px; }
+  .info, .info-cert {
+    padding-left: 10px;
+    padding-right: 10px; }
   .modal-second {
     right: 10px;
     bottom: 60px; }

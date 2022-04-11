@@ -128,6 +128,39 @@
             font-size: 14px 
 
 @media screen and ( max-width: 991px )
+    .wysiwyg
+        font-size: 16px
+        i
+            margin-bottom: 15px
+        p
+            margin-bottom: 15px
+        h3
+            font-size: 42px
+            margin-bottom: 30px
+        h4
+            font-size: 14px
+            margin-bottom: 20px
+
+    .info
+        margin-bottom: 30px
+        &-cert
+            &__box
+                grid-template-columns: repeat(auto-fill, 300px)
+                grid-gap: 20px
+            &__card
+                width: 300px
+                height: 300px
+
+    .path
+        padding: 20px 10px
+        &__ul
+            flex-wrap: wrap
+        &__li
+            font-size: 14px
+            margin-right: 15px
+            &::after
+                display: none
+
     .modal-second
         right: 20px
         bottom: 70px
@@ -410,6 +443,15 @@
                 font-size: 12px
 
 @media screen and ( max-width: 767px )
+    .modal
+        &-info
+            &__dialog
+                overflow: auto
+            &__img
+                max-width: none
+                max-height: none
+                width: auto
+
     .footer
         &__row
             &--bottom
@@ -433,6 +475,13 @@
             margin-bottom: 20px
 
 @media screen and ( max-width: 575px )
+    .wysiwyg
+        h3
+            font-size: 28px
+    .info, .info-cert
+        padding-left: 10px
+        padding-right: 10px
+
     .modal-second
         right: 10px
         bottom: 60px
@@ -539,6 +588,7 @@
                         margin-right: 0
 
 @media screen and ( max-height: 575px )
+
     .modal-second
         height: 350px
 

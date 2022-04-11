@@ -1,0 +1,27 @@
+.path
+    padding-top: 60px
+    padding-bottom: 60px
+    &__ul
+        justify-content: flex-start
+        list-style-type: none
+    &__li
+        font-size: 16px
+        transition: 0.3s
+        margin-right: 30px
+        position: relative
+        &::after
+            content: '/'
+            position: absolute
+            bottom: 0
+            right: -18px
+        &:last-of-type
+            margin-right: 0
+            &::after
+                display: none
+        &:hover
+            opacity: 0.7
+    &__link
+        text-decoration: none
+        color: #000
+        &--active
+            color: #fa7e19

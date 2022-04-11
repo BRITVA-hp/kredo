@@ -20,6 +20,21 @@
     &--active
         opacity: 1
         visibility: visible
+    &-info
+        background-color: #fff
+        &__img
+            max-width: 100%
+            max-height: calc( 100vh - 30px )
+        &__close
+            position: absolute
+            top: 15px
+            right: 20px
+            cursor: pointer
+            path
+                transition: 0.3s
+            &:hover
+                path
+                    fill: tomato
     &-second
         z-index: 197
         position: fixed

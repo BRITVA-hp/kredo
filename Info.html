@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=6b448d53-6158-49b3-aed6-01ced7b9c199&lang=ru_RU" type="text/javascript"></script>
+    <title>ООО «КРЕДО»</title>
+</head>
+<body>
+
+    <header class="header section">
+
+        <div class="header-top">
+            <div class="header-top__container container">
+                <div class="row header-top__row">
+                    <span class="header-top__box"><img src="img/header/here.png" class="header-top__logo--here" alt="here">Мы находимся по адресу: <a href="#">г. Новокуйбышевск, ул. Дзержинского, д.13</a></span>
+                    <div class="row header-top__box">
+                        <img src="img/header/msg.png" alt="here">
+                        <span>Ваши вопросы: <a href="mailto:kredosam@yandex.ru">kredosam@yandex.ru</a></span>
+                    </div>
+                </div>
+
+                <div class="header__burger">
+                    <div class="header__burger__line"></div>
+                    <div class="header__burger__line"></div>
+                    <div class="header__burger__line"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="header-menu">
+            <ul class="header-menu__ul">
+                <li class="header-menu__li header-menu__li--active"><a href="info.html">О компании</a></li>
+                <li class="header-menu__li"><a href="expert.html">Экспертизы</a></li>
+                <li class="header-menu__li"><a href="legal.html">Юридические услуги</a></li>
+                <li class="header-menu__li"><a href="cadastre.html">Кадастровые работы</a></li>
+                <li class="header-menu__li"><a href="geodesic.html">Геодезические работы</a></li>
+                <li class="header-menu__li"><a href="grade.html">Оценка</a></li>
+                <li class="header-menu__li"><a href="price.html">Прайс-лист</a></li>
+                <li class="header-menu__li"><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-center">
+            <div class="header-center__container container">
+                <div class="row header-center__row">
+                    <a href="index.html" class="header__logo">
+                        <picture>
+                            <source srcset="img/header/logoM.png" media="(max-width: 991px)">
+                            <img src="img/header/logo.png" alt="kredo">
+                            <!-- <img src="img/header/logoM.png" alt="kredo"> -->
+                        </picture>
+                    </a>
+    
+                    <div class="header-center__tel">
+                        <a href="tel:+7 (84635) 9-92-25" class="header-center__tel__link"><img src="img/header/phone.png" alt="tel">+7 (84635) 9-92-25</a>
+                        <p class="header-center__tel__text">с 8.00 до 17.00 (Пн-Чт) с 8.00 до 16.00 (ПТ)</p>
+                        <p class="header-center__tel__text header-center__tel__text--bottom">(12.00 - 13.00 перерыв)</p>
+                    </div>
+    
+                    <div class="header-center__button-group">
+                        <a href="tel:+7 (84635) 9-92-25" class="header-center__tel__link header-center__tel__link--mobile"><img src="img/header/phoneM1.png" alt="tel"></a>
+                        <button data-modalMain class="button header__button">
+                            <span>Заказать обратный звонок</span>
+                            <span>Обратный звонок</span>
+                        </button>
+                        <a href="contacts.html" class="header-center__button-group__link">>> Карта проезда к нашей компании</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="header-nav">
+            <ul class="header__ul">
+                <li class="header__li header__li--active"><a href="info.html">О компании</a></li>
+                <li class="header__li"><a href="expert.html">Экспертизы</a></li>
+                <li class="header__li"><a href="legal.html">Юридические услуги</a></li>
+                <li class="header__li"><a href="cadastre.html">Кадастровые работы</a></li>
+                <li class="header__li"><a href="geodesic.html">Геодезические работы</a></li>
+                <li class="header__li"><a href="grade.html">Оценка</a></li>
+                <li class="header__li"><a href="price.html">Прайс-лист</a></li>
+                <li class="header__li"><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- /.header -->
+
+    <main>
+
+        <section class="section path">
+            <div class="container container--small path__container">
+                <ul class="path__ul row">
+                    <li class="path__li"><a href="index.html" class="path__link">Главная</a></li>
+                    <li class="path__li"><a href="info.html" class="path__link  path__link--active">О компании</a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- /.section path -->
+
+        <section class="section info">
+            <div class="container container--small info__container">
+                <div class="wysiwyg">
+                    <h4>ЗЕМЕЛЬНО-КАДАСТРОВАЯ ОРГАНИЗАЦИЯ "КРЕДО"</h4>
+                    <h3>О компании</h3>
+                    <p><span>Компания "Кредо"</span> была создана в сентябре 2007 года и зарегистрирована на территории городского округа Новокуйбышевск Самарской области. Форма собственности – общество с ограниченной ответственностью.</p>
+                    <p>С первого дня своего создания мы ориентируемся на оказание услуг в сфере инженерно-геодезических изысканий и кадастровых работ (лицензии № СРГ-01965К (картографическая деятельность), № СРГ-01965Г (геодезическая деятельность), свидетельств СРО №СРО-И-008-30112009-0008.1).</p>
+                    <p>Нефтехимический и нефтеперерабатывающий кластеры Российской экономики, развивающиеся в Самарском регионе и Новокуйбышевске в частности, естественным образом отложили свой отпечаток на специфику работ, выполняемых нашей компанией.</p>
+                    <p>Стремление к развитию, системный подход, контроль качества выпускаемой продукции – составляющие успешного пути развития.</p>
+                    <p>В 2009 году компания приступает к освоению следующих сегментов рынка – инженерно-геологические изыскания и оценка земельных участков, объектов движимого и недвижимого имущества.</p>
+                    <p>Прорабатываются проекты по развитию таких направлений как проектирование и изыскания по объектам капитального строительства (изготовление технических паспортов, технических планов, подготовка заключений).</p>
+                    <p>В 2011 году в нашей компании появляются первые кадастровые инженеры, что позволило нам достойно представлять себя на рынке кадастровых услуг. В настоящее время в ООО "Кредо" работает 7 (семь) сертифицированных кадастровых инженера</p>
+                    <p>В 2013 году включается в работу отдел по работе с объектами капитального строительства.</p>
+                    <p>В 2014 году штатная численность компании Кредо составляет 43 человека.</p>
+                    <span>Преимущества работы с компанией «Кредо».</span>
+                    <p>Компания соответствует требованиям Законодательства и вправе оказывать геодезические и оценочные услуги.
+                        В период нестабильной экономической ситуации и неблагоприятной конъюнктуры многие компании борются с сокращением издержек и думают об их сохранении на достигнутом уровне. Что касается нас, мы постоянно анализируем ситуацию, не боимся смотреть в будущее, и строить планы по дальнейшему развитию. Поэтому, наши сотрудники постоянно повышают свою профессиональную квалификацию и приобретают более обширные и глубокие знания для оказания качественных услуг, соответствующих европейскому уровню.</p>
+                    <p>Мы стремимся расширять наши позиции на рынке и завоевать доверие еще большего числа клиентов. Вот почему мы всегда готовы рассмотреть любые интересные предложения о сотрудничестве от всех компаний, а также сами стремимся укрепить партнерские отношения с финансовыми организациями.</p>
+                </div>
+            </div>
+        </section>
+        <!-- /.section info -->
+
+        <section class="section info-cert">
+
+            <div class="container container--small info-cert__container">
+                <div class="info-cert__box">
+                    <div data-path="./img/info/img1.png" class="info-cert__card"></div>
+                    <div data-path="./img/info/img2.png" class="info-cert__card"></div>
+                    <div data-path="./img/info/img3.png" class="info-cert__card"></div>
+                    <div data-path="./img/info/img4.png" class="info-cert__card"></div>
+                    <div data-path="./img/info/img5.png" class="info-cert__card"></div>
+                    <div data-path="./img/info/img6.png" class="info-cert__card"></div>
+                    <div data-path="./img/info/img7.png" class="info-cert__card"></div>
+                    <div data-path="./img/info/img8.png" class="info-cert__card"></div>
+                    <div data-path="./img/info/img9.png" class="info-cert__card"></div>
+                    <div data-path="./img/info/img10.png" class="info-cert__card"></div>
+                    <div data-path="./img/info/img11.png" class="info-cert__card"></div>
+                </div>
+            </div>
+
+        </section>
+        <!-- /.section info-cert -->
+
+        <section class="section Icontacts">
+
+            <h3 class="Icontacts__title">Контактная информация</h3>
+
+            <div class="Icontacts__box">
+                <div class="Icontacts__wrap">
+
+                    <div class="Icontacts__text-block">
+                        <p class="Icontacts__header">Мы находимся по адресу:</p>
+                        <p class="Icontacts__text">Самарская область, г. Новокуйбышевск, ул. Дзержинского, д.13</p>
+                    </div>
+
+                    <div class="Icontacts__text-block">
+                        <p class="Icontacts__header">Режим работы:</p>
+                        <p class="Icontacts__text">с 8.00 до 17.00 ПН-ЧТ (12.00 - 13.00 обед) <br> с 8.00 до 16.00 ПТ</p>
+                    </div>
+
+                    <div class="Icontacts__text-block">
+                        <p class="Icontacts__header">Почта для ваших вопросов:</p>
+                        <a href="mailto:kredosam@yandex.ru" class="Icontacts__link">kredosam@yandex.ru</a>
+                    </div>
+
+                </div>
+
+                <div data-modalIcontacts class="Icontacts__img">
+                    <p class="Icontacts__img__text">Нажмите, что бы увеличить</p>
+                    <img src="img/index/contacts/img.png" alt="here">
+                </div>
+            </div>
+
+            <div class="Icontacts__map" id="map"></div>
+
+            <div class="modal-Icontacts modal">
+
+                <svg class="modal-Icontacts__close" width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.41421 -0.000151038L0 1.41406L21.2132 22.6273L22.6274 21.2131L1.41421 -0.000151038Z" fill="#000000"></path>
+                    <path d="M22.6291 1.41421L21.2148 0L0.00164068 21.2132L1.41585 22.6274L22.6291 1.41421Z" fill="#000000"></path>
+                </svg>
+
+                <div class="modal-Icontacts__dialog">
+                    <img src="img/index/contacts/img.png" alt="here">
+                </div>
+            </div>
+
+            <div class="section Icall">
+
+                <h3 class="Icall__title">Позвоните нам: <a href="tel:+7 (84635) 9-92-25">+7 (84635) 9-92-25</a></h3>
+                <h4 class="Icall__subtitle">И мы ответим на все вопросы!</h4>
+    
+                <div class="row Icall__row">
+                    <div class="Icall__card">
+                        <p data-modalMain class="Icall__card__text">Оставить заявку на проведение работ</p>
+                    </div>
+                    <div class="Icall__card Icall__card--2">
+                        <a href="price.html" class="Icall__card__text">Узнать актуальный прайс-лист цен на услуги</a>
+                    </div>
+                </div>
+    
+            </div>
+
+        </section>
+        <!-- /.section Icontacts -->
+    </main>
+
+    <footer class="footer section">
+
+        <div class="container footer__container">
+
+            <div class="row footwr__row footer__row--top">
+
+                <div class="footer__card">
+                    <p class="footer__title">МЕЖЕВАНИЕ ЗЕМЕЛЬНЫХ УЧАСТКОВ</p>
+
+                    <p class="footer__text">Раздел земельного участка</p>
+                    <p class="footer__text">Объединение зем. участка</p>
+                    <p class="footer__text">Перераспределние з/у</p>
+                    <p class="footer__text">Межевой план</p>
+                </div>
+
+                <div class="footer__card">
+                    <p class="footer__title">ПОДГОТОВКА ТЕХНИЧЕСКИХ ПЛАНОВ</p>
+
+                    <p class="footer__text">Технический план здания</p>
+                    <p class="footer__text">Технический план гаража</p>
+                    <p class="footer__text">Технический план сооружения</p>
+                    <p class="footer__text">Технический план нежилого объекта</p>
+                </div>
+
+                <div class="footer__card">
+                    <p class="footer__title">ГЕОДЕЗИЧЕСКИЕ, ТОПОГРАФИЧЕСКИЕ РАБОТЫ</p>
+
+                    <p class="footer__text">Топографическая съемка</p>
+                    <p class="footer__text">Геодезические изыскания</p>
+                    <p class="footer__text">Акт обследования</p>
+                    <p class="footer__text">Заключение кадастрового инженера</p>
+                </div>
+
+                <div class="footer__card">
+                    <p class="footer__title">УСЛУГИ ОЦЕНКИ НЕДВИЖИМОСТИ, ИМУЩЕСТВА, СОБСТВЕННОСТИ</p>
+
+                    <p class="footer__text">Оценка квартиры, дома</p>
+                    <p class="footer__text">Оценка земельного участка</p>
+
+                    <img class="footer__logo" src="img/footer/logo.png" alt="logo">
+                </div>
+
+            </div>
+
+            <div class="row footer__row footer__row--bottom">
+
+                <div class="footer__contacts footer__info">
+                    <p class="footer__contacts__title">КОНТАКТЫ</p>
+                    <p class="footer__contacts__text">
+                        <img src="img/footer/here.png" alt="here">
+                        <span>г. Новокуйбышевск, ул. Дзержинского, д.13</span>
+                    </p>
+                </div>
+
+                <div class="footer__tel footer__info">
+                    <div class="footer__tel__text">
+                        <div class="row">
+                            <img src="img/footer/tel.png" alt="tel">
+                            <a href="tel:+7 (84635) 9-92-25">+7 (84635) 9-92-25</a>
+                        </div>
+                        <span>с 9.00 до 18.00 - ПН-ПТ</span>
+                    </div>
+                </div>
+
+                <div class="footer__msg footer__info">
+                    <p class="footer__msg__text">
+                        <img src="img/footer/msg.png" alt="message">
+                        Ваши вопросы: <a href="mailto:kredosam@yandex.ru">kredosam@yandex.ru</a>
+                    </p>
+                </div>
+
+            </div>
+
+            <p class="footer__polit">© 2020, ООО "КРЕДО" - все права защищены. Полный комплекс услуг по межевым и кадастровым работам. Технические планы, подготовка схем земельных участков.</p>
+
+        </div>
+
+    </footer>
+    <!-- /.footer section -->
+
+    <div data-modalSecond class="msg-wrap">
+        <p class="msg__text">Быстро ответим на ваши вопросы</p>
+        <div class="msg msg--anim msg--click">
+            <svg class="t708__icon" style="fill:#ffffff;" width="28px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.6 17.5"> <path d="M3.7 17.5v-4.8H2c-1.1 0-2-.9-2-2V2C0 .9.9 0 2 0h14.6c1.1 0 2 .9 2 2v8.8c0 1.1-.9 2-2 2H9l-5.3 4.7zM2 1c-.6 0-1 .4-1 1v8.8c0 .5.4 1 1 1h2.8v3.5l3.8-3.5h8c.5 0 1-.4 1-1V2c0-.5-.4-1-1-1H2z"></path> </svg>
+        </div>
+    </div>
+
+    <div class="modal modal-main">
+
+        <img class="modal-main__close" src="img/modal/close.png" alt="close">
+
+        <form action="#" class="modal-main__dialog">
+            <h3 class="modal-main__title">У вас есть вопрос? Хотите заказать кадастровые работы?</h3>
+            <p class="modal-main__text">Просто отправьте ваши контакты и мы перезвоним</p>
+
+            <div class="modal-main__input-group">
+                <input class="modal-main__input" type="text" placeholder="Введите ваше имя">
+            </div>
+
+            <div class="modal-main__input-group">
+                <input class="modal-main__input" type="tel" placeholder="+7 (___) ___ - __ - __">
+            </div>
+
+            <div class="modal-main__input-group">
+                <textarea class="modal-main__textarea" cols="30" rows="4" type="text" placeholder="Задайте свой вопрос или оставьте комментарий..."></textarea>
+            </div>
+            <button class="button modal-main__button">Отправить сообщение</button>
+
+            <p class="modal-main__footer">Отправляя данные вы соглашаетесь с политикой обработки данных</p>
+
+        </form>
+
+    </div>
+    <!-- /.modal modal-main -->
+
+    
+    <div class="modal-second">
+        <div class="modal-second__dialog">
+            <p class="modal-second__title">У вас есть вопросы или вы хотите заказать услугу?</p>
+
+            <div class="modal-second__input-group">
+                <input placeholder="Ваше имя" type="text" class="modal-second__input">
+            </div>
+
+            <div class="modal-second__input-group">
+                <input placeholder="+7 (___) ___ - __ - __" type="tel" class="modal-second__input">
+            </div>
+
+            <div class="modal-second__input-group">
+                <textarea placeholder="Введите ваш вопрос или пожелание" class="modal-second__textarea" id="" cols="30" rows="4"></textarea>
+            </div>
+
+            <button class="button modal-second__button">ОТПРАВИТЬ</button>
+
+            <p class="modal-second__text">ООО "Кредо" - топографио-геодезическая компания</p> 
+
+        </div>
+    </div>
+
+    <div class="modal modal-info">
+
+        <svg class="modal-info__close" width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.41421 -0.000151038L0 1.41406L21.2132 22.6273L22.6274 21.2131L1.41421 -0.000151038Z" fill="#000000"></path>
+            <path d="M22.6291 1.41421L21.2148 0L0.00164068 21.2132L1.41585 22.6274L22.6291 1.41421Z" fill="#000000"></path>
+        </svg>
+
+        <div class="modal-info__dialog">
+            <div class="modal-info__img-wrap">
+                <img class="modal-info__img" src="#" alt="img">
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

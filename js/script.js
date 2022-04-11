@@ -20,14 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
     burger('.header__burger', 'header__burger--active', '.header-menu', 'header-menu--active');
 
     //bacground-image in main__card
-    function bgImg(mainCard) {
+    function bgImg(mainCard, path, ext) {
         const _mainCards = document.querySelectorAll(mainCard);
         _mainCards.forEach((item, index) => {
-            item.style.backgroundImage = `url(./img/main/img${index + 1}.png)`;
+            item.style.backgroundImage = `url(${path}/img${index + 1}.${ext})`;
         });
     }
 
-    bgImg('.main__card');
+    bgImg('.main__card', './img/main', 'png');
+    bgImg('.info-cert__card', './img/info', 'png');
 
     // slider in main
     function sliderMain(card, cardActiveClass, prev, next, section) {
@@ -38,41 +39,43 @@ document.addEventListener('DOMContentLoaded', () => {
         let counter = 0,
             interval;
 
-        const prevSlide = () => {
-            counter--;
-            if (counter < 0) {
-                counter = cards.length - 1;
-            }
-            clearActiveClass(cards, cardActiveClass);
-            cards[counter].classList.add(cardActiveClass);
-        };
-
-        const nextSlide = () => {
-            counter++;
-            if (counter > cards.length - 1) {
-                counter = 0;
-            }
-            clearActiveClass(cards, cardActiveClass);
-            cards[counter].classList.add(cardActiveClass);
-        };
-
-        interval = setInterval(nextSlide, 8000);
-
-        buttonPrev.addEventListener('click', () => {
-            prevSlide();
-        });
-
-        buttonNext.addEventListener('click', () => {
-            nextSlide();
-        });
-
-        _section.addEventListener('mouseover', () => {
-            clearInterval(interval);
-        });
-
-        _section.addEventListener('mouseout', () => {
+        if (buttonPrev) {
+            const prevSlide = () => {
+                counter--;
+                if (counter < 0) {
+                    counter = cards.length - 1;
+                }
+                clearActiveClass(cards, cardActiveClass);
+                cards[counter].classList.add(cardActiveClass);
+            };
+    
+            const nextSlide = () => {
+                counter++;
+                if (counter > cards.length - 1) {
+                    counter = 0;
+                }
+                clearActiveClass(cards, cardActiveClass);
+                cards[counter].classList.add(cardActiveClass);
+            };
+    
             interval = setInterval(nextSlide, 8000);
-        });
+    
+            buttonPrev.addEventListener('click', () => {
+                prevSlide();
+            });
+    
+            buttonNext.addEventListener('click', () => {
+                nextSlide();
+            });
+    
+            _section.addEventListener('mouseover', () => {
+                clearInterval(interval);
+            });
+    
+            _section.addEventListener('mouseout', () => {
+                interval = setInterval(nextSlide, 8000);
+            });
+        }
     }
 
     sliderMain('.main__card', 'main__card--active', '.main__arrow--prev', '.main__arrow--next', '.main');
@@ -104,17 +107,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function scrollListener(container) {
         const _container = document.querySelector(container);
-        function scrolling() {
-            if (document.documentElement.scrollTop >= _container.offsetTop - 100) {
-                numbers('.Iadv__card__title--1 span', 4500, 3000);
-                numbers('.Iadv__card__title--2 span', 1800, 3000);
-                numbers('.Iadv__card__title--3 span', 3190, 3000);
-                numbers('.Iadv__card__title--4 span', 13, 3000);
-
-                document.removeEventListener('scroll', scrolling);
+        if (_container) {
+            function scrolling() {
+                if (document.documentElement.scrollTop >= _container.offsetTop - 100) {
+                    numbers('.Iadv__card__title--1 span', 4500, 3000);
+                    numbers('.Iadv__card__title--2 span', 1800, 3000);
+                    numbers('.Iadv__card__title--3 span', 3190, 3000);
+                    numbers('.Iadv__card__title--4 span', 13, 3000);
+    
+                    document.removeEventListener('scroll', scrolling);
+                }
             }
+            document.addEventListener('scroll',scrolling);
         }
-        document.addEventListener('scroll',scrolling);
     }
     scrollListener('.Iadv__container');
 
@@ -196,6 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     modal('.modal-Icontacts', 'modal--active', '[data-modalIcontacts]', '.modal-Icontacts__close');
     modal('.modal-main', 'modal--active', '[data-modalMain]', '.modal-main__close');
+    modal('.modal-info', 'modal--active', '.info-cert__card', '.modal-info__close');
 
     //msg
     function msg(elem, elemActiveClass, elemClickedClass) {
@@ -219,5 +225,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     msgModal('.modal-second', '[data-modalSecond]', 'modal-second--active');
+
+
+    // send image to modal
+
+    function sendImgToModal (elem, img) {
+        const elems = document.querySelectorAll(elem);
+        const _img = document.querySelector(img);
+
+        elems.forEach(el => {
+            el.addEventListener('click', (e) => {
+                const path = e.target.getAttribute('data-path');
+                console.log(path, _img);
+                _img.setAttribute('src', path);
+            });
+        });
+    }
+
+    sendImgToModal('.info-cert__card', '.modal-info__img');
 
 });
