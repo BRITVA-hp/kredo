@@ -74,6 +74,14 @@
                 margin-bottom: 10px
 
 @media screen and ( max-width: 1200px )
+    .contacts
+        padding-bottom: 0
+        &__row
+            align-items: center
+        &__map
+            width: 550px
+            height: 350px
+
     .footer
         padding-top: 60px
         &__row
@@ -128,8 +136,39 @@
             font-size: 14px 
 
 @media screen and ( max-width: 991px )
+    .contacts
+        font-size: 16px
+        &__box
+            margin-right: 20px
+        &__map
+            width: 400px
+            height: 250px
+        &__row
+            padding-top: 60px
+            justify-content: center
+            &::before
+                top: 12px
+        &__text
+            margin-bottom: 10px
+        &__title
+            font-size: 20px
+            margin-bottom: 10px
+
     .wysiwyg
         font-size: 16px
+        h5
+            font-size: 24px
+            margin-bottom: 20px
+        table
+            margin-bottom: 40px
+        thead
+            font-size: 18px
+        th
+            padding: 10px
+        tbody
+            font-size: 16px
+        td
+            padding: 10px
         i
             margin-bottom: 15px
         p
@@ -443,6 +482,16 @@
                 font-size: 12px
 
 @media screen and ( max-width: 767px )
+    .contacts
+        &__map
+            width: 100%
+            max-width: 400px
+        &__row
+            flex-direction: column
+            align-items: center
+            &::before
+                top: 20px
+
     .modal
         &-info
             &__dialog
@@ -475,10 +524,20 @@
             margin-bottom: 20px
 
 @media screen and ( max-width: 575px )
+    .contacts
+        padding-left: 10px
+        padding-right: 10px
+
     .wysiwyg
+        h5
+            font-size: 20px
+        thead
+            font-size: 14px
+        tbody
+            font-size: 12px
         h3
             font-size: 28px
-    .info, .info-cert
+    .info, .info-cert, .price, .legal, .grade, .geodesic, .expert, .cadastre
         padding-left: 10px
         padding-right: 10px
 
