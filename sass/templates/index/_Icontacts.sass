@@ -19,6 +19,8 @@
         line-height: 1.55
         font-weight: 700
         margin-bottom: 5px
+        &--add
+            text-align: center
     &__text
         font-size: 17px
         line-height: 1.55
@@ -28,16 +30,26 @@
         line-height: 1.55
         text-decoration: none
     &__box
-        width: 665px
+        width: 865px
         display: flex
         align-items: center
         justify-content: space-between
-        padding: 20px 0 0 20px
+        padding: 20px 0 110px 20px
         background-color: #ffffff
         position: absolute
         bottom: 120px
-        left: 50%
+        left: 40%
         z-index: 3
+        &__row
+            align-items: flex-start
+        &__wrap
+            position: absolute
+            left: 0
+            bottom: 0
+            width: 100%
+            padding: 0 20px
+        &__block
+            width: 50%
     &__img
         width: 300px
         border: 2px dashed #234a04

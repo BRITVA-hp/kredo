@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Порядок по умолчанию: «широта, долгота».
                 // Чтобы не определять координаты центра карты вручную,
                 // воспользуйтесь инструментом Определение координат.
-                center: [53.091139, 50.066194],
+                center: [53.098246, 50.042488],
                 // Уровень масштабирования. Допустимые значения:
                 // от 0 (весь мир) до 19.
                 zoom: 12
@@ -144,6 +144,18 @@ document.addEventListener('DOMContentLoaded', () => {
             myMap.geoObjects.add(new ymaps.Placemark([53.092932, 49.964125], {
                 balloonContent: 'КРЕДО - топографо-геодезическая компания Россия, Самарская область, Новокуйбышевск, улица Дзержинского, 13 Кадастровые работы, межевание, оценка недвижимости',
                 iconCaption: 'КРЕДО - топографо-геодезическая компания'
+            }, {
+                preset: 'islands#greenDotIconWithCaption'
+            }));
+            myMap.geoObjects.add(new ymaps.Placemark([52.976661, 49.705707], {
+                balloonContent: 'Земельно-кадастровая компания КРЕДО г. Чапаевск',
+                iconCaption: 'Земельно-кадастровая компания КРЕДО г. Чапаевск'
+            }, {
+                preset: 'islands#greenDotIconWithCaption'
+            }));
+            myMap.geoObjects.add(new ymaps.Placemark([53.203230, 50.177924], {
+                balloonContent: 'Земельно-кадастровая компания КРЕДО г. Самара',
+                iconCaption: 'Земельно-кадастровая компания КРЕДО г. Самара'
             }, {
                 preset: 'islands#greenDotIconWithCaption'
             }));
@@ -190,6 +202,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 preset: 'islands#greenDotIconWithCaption'
             }));
             myMap3.behaviors.disable('scrollZoom');            
+        }
+        // Создание карты.
+        if (document.getElementById('map4')) {
+            var myMap4 = new ymaps.Map("map4", {
+                // Координаты центра карты.
+                // Порядок по умолчанию: «широта, долгота».
+                // Чтобы не определять координаты центра карты вручную,
+                // воспользуйтесь инструментом Определение координат.
+                center: [53.203230, 50.177924],
+                // Уровень масштабирования. Допустимые значения:
+                // от 0 (весь мир) до 19.
+                zoom: 12
+            });
+    
+            myMap4.geoObjects.add(new ymaps.Placemark([53.203230, 50.177924], {
+                balloonContent: 'Земельно-кадастровая компания КРЕДО г. Самара',
+                iconCaption: 'Земельно-кадастровая компания КРЕДО г. Самара'
+            }, {
+                preset: 'islands#greenDotIconWithCaption'
+            }));
+            myMap4.behaviors.disable('scrollZoom');            
         }
 
     }

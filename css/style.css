@@ -1025,6 +1025,8 @@ body {
     line-height: 1.55;
     font-weight: 700;
     margin-bottom: 5px; }
+    .Icontacts__header--add {
+      text-align: center; }
   .Icontacts__text {
     font-size: 17px;
     line-height: 1.55; }
@@ -1034,16 +1036,26 @@ body {
     line-height: 1.55;
     text-decoration: none; }
   .Icontacts__box {
-    width: 665px;
+    width: 865px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0 0 20px;
+    padding: 20px 0 110px 20px;
     background-color: #ffffff;
     position: absolute;
     bottom: 120px;
-    left: 50%;
+    left: 40%;
     z-index: 3; }
+    .Icontacts__box__row {
+      align-items: flex-start; }
+    .Icontacts__box__wrap {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 0 20px; }
+    .Icontacts__box__block {
+      width: 50%; }
   .Icontacts__img {
     width: 300px;
     border: 2px dashed #234a04;
@@ -1465,14 +1477,16 @@ body {
       right: 0;
       transform: translate(50%, -50%) rotate(45deg); }
 
+@media screen and (max-width: 1500px) {
+  .Icontacts__box {
+    left: auto;
+    right: 0; } }
+
 @media screen and (max-width: 1400px) {
   .modal-second {
     right: 40px; }
   .msg-wrap {
     right: 40px; }
-  .Icontacts__box {
-    left: auto;
-    right: 0; }
   .Iexpert__field {
     width: 940px;
     margin: auto; }
@@ -1557,12 +1571,22 @@ body {
   .Icontacts__map {
     height: 450px; }
   .Icontacts__box {
-    position: static;
+    position: relative;
+    left: auto;
+    bottom: auto;
     background-color: transparent;
     margin: auto;
     width: auto;
     padding: 0;
+    padding-bottom: 160px;
     justify-content: center; }
+    .Icontacts__box__block {
+      width: 49%; }
+    .Icontacts__box__wrap {
+      max-width: 640px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0; }
   .Icontacts__wrap {
     margin-right: 20px; }
   .Igeo__text {
@@ -1697,6 +1721,8 @@ body {
       max-width: none; }
   .Icontacts {
     padding-top: 30px; }
+    .Icontacts__box__wrap {
+      max-width: 590px; }
     .Icontacts__link {
       font-size: 18px; }
     .Icontacts__map {
@@ -1919,6 +1945,8 @@ body {
     margin: 5px; }
   .Icontacts {
     text-align: center; }
+    .Icontacts__img {
+      margin-bottom: 10px; }
     .Icontacts__title {
       margin-bottom: 20px; }
     .Icontacts__map {
@@ -1928,7 +1956,20 @@ body {
       margin-bottom: 20px; }
     .Icontacts__box {
       flex-direction: column;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px;
+      padding-bottom: 0; }
+      .Icontacts__box__block {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 10px; }
+        .Icontacts__box__block:last-of-type {
+          margin-bottom: 0; }
+      .Icontacts__box__row {
+        flex-direction: column;
+        align-items: center; }
+      .Icontacts__box__wrap {
+        position: static;
+        transform: none; } }
 
 @media screen and (max-width: 575px) {
   .contacts {

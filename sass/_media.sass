@@ -1,14 +1,15 @@
+@media screen and ( max-width: 1500px )
+    .Icontacts
+        &__box
+            left: auto
+            right: 0
+
 @media screen and ( max-width: 1400px )
     .modal-second
         right: 40px
 
     .msg-wrap
         right: 40px
-
-    .Icontacts
-        &__box
-            left: auto
-            right: 0
 
     .Iexpert
         &__field
@@ -107,12 +108,22 @@
         &__map
             height: 450px
         &__box
-            position: static
+            position: relative
+            left: auto
+            bottom: auto
             background-color: transparent
             margin: auto
             width: auto
             padding: 0
+            padding-bottom: 160px
             justify-content: center
+            &__block
+                width: 49%
+            &__wrap
+                max-width: 640px
+                left: 50%
+                transform: translateX(-50%)
+                padding: 0
         &__wrap
             margin-right: 20px
 
@@ -269,6 +280,9 @@
 
     .Icontacts
         padding-top: 30px
+        &__box
+            &__wrap
+                max-width: 590px
         &__link
             font-size: 18px
         &__map
@@ -512,6 +526,8 @@
 
     .Icontacts
         text-align: center
+        &__img
+            margin-bottom: 10px
         &__title
             margin-bottom: 20px
         &__map
@@ -522,6 +538,19 @@
         &__box
             flex-direction: column
             margin-bottom: 20px
+            padding-bottom: 0
+            &__block
+                width: 100%
+                max-width: 300px
+                margin-bottom: 10px
+                &:last-of-type
+                    margin-bottom: 0
+            &__row
+                flex-direction: column
+                align-items: center
+            &__wrap
+                position: static
+                transform: none
 
 @media screen and ( max-width: 575px )
     .contacts
